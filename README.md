@@ -1,50 +1,36 @@
 # TQLA Social Media Spec Portfolio — Kalen Wilson
 
-Static one-page spec portfolio for Kalen Wilson’s application to TQLA’s Social Media Manager / Content Creator role in Windsor, Ontario.
-
 **Spec concepts created for application purposes, not commissioned by TQLA.**
 
-## What this is
+The complete visual site — original nightlife photography, five Reel concepts, Story mockups, calendar, campaign cards, and the idea generator — lives in the local project:
 
-A portable website of proposed Reels, Stories, a sample content calendar, campaign themes, and an interactive idea generator. It is not TQLA’s live social presence and does not use TQLA logos or venue photography.
+`/home/kalen/tqla-spec-portfolio`
 
-## Edit locally
-
-Open `index.html` in a browser, or from this folder:
+Open it with:
 
 ```bash
+cd /home/kalen/tqla-spec-portfolio
 python3 -m http.server 4173
 ```
 
-Then visit `http://localhost:4173`.
+Then visit http://localhost:4173
 
-- Copy lives in `index.html`
-- Layout and motion live in `styles.css`
-- Navigation, Story frames, polls, and the idea generator live in `script.js`
-- Original concept images live in `assets/`
+## Publish the full site
 
-## Deploy
-
-This is a static site. Any static host works.
-
-### Vercel
+From that folder, after logging in:
 
 ```bash
 npx vercel --prod --yes
-```
-
-Or connect this GitHub repository to a Vercel project with output set to the repository root (no build command).
-
-### Netlify
-
-```bash
+# or
 npx netlify deploy --prod --dir .
 ```
 
-### GitHub Pages
+To put the full photographic site on this GitHub repository:
 
-Publish the `main` branch from the repository root.
+```bash
+cd /home/kalen/tqla-spec-portfolio
+git remote add origin https://github.com/kalenwilson87-lab/tqla-spec-portfolio.git
+git push -u origin main
+```
 
-## Accuracy notes
-
-Menu items, prices, hours, talent, weekly specials, and event dates in this spec are hypothetical or left open on purpose. Confirm them with TQLA before any live post.
+Menu items, prices, hours, talent, weekly specials, and event dates in the spec stay hypothetical until TQLA confirms them.
